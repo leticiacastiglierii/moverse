@@ -61,7 +61,7 @@ section {
 }
 
 .quem {
-    background-image: url("IMAGENS/quem-somos/capa.png");  /*definir uma imagem de fundo*/
+    background-image: url("IMAGENS/capa.png");  /*definir uma imagem de fundo*/
     background-size: cover;                               /*define o tamanho da imagem de fundo*/
     background-repeat: no-repeat;                        /*como a imagem de fundo é posicionada*/
     margin: 0;                                          /*margem nos quatro lados do elemento*/
