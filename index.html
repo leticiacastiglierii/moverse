@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+    <link href='open-sans.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="quem">
+        <header class="menu">
+            <a href="index.html"><img src="IMAGENS/html/LOGO CATALOGO 1.png" alt="logo"></a>
+            <nav>
+                <ul>
+                    <a href="">
+                        <li>SOBRE NÓS</li>
+                    </a>
+                    <a href="">
+                        <li>CATÁLOGO</li>
+                    </a>
+                    <a href="contato.html">
+                        <li>CONTATO</li>
+                    </a>
+                </ul>
+            </nav>
+
+        </header>
+        <div>
+            <h1 class="titulo">MOVER-SE</h1>
+            <p class="subtitulo">Funcionalidade e estilo</p>
+            <p class="paragrafo1">Bem-vindo à Mover.se, uma movelaria que nasceu da resiliência e da necessidade de
+                adaptação em tempos desafiadores. Estamos empenhados em transformar espaços em ambientes versáteis e
+                funcionais, elevando o conceito de mobiliário a um novo patamar.</p>
+            <p class="paragrafo1"> Nossa jornada começou como uma resposta à demanda crescente por soluções que se
+                adequassem aos novos contextos da vida moderna. Desde então, evoluímos constantemente, mantendo o foco
+                em nossa missão principal: criar móveis que vão além da praticidade, incorporando estilo e conforto à
+                vida de nossos clientes.</p>
+        </div>
+        <div class="login-container" id="popup">
+            <div class="popup-conteudo">
+                <span class="fechar" onclick="fecharPopup()">&times;</span>
+                <h1 class="cadastro">CADASTRE-SE</h1>
+                <p class="paragrafo">E GANHE 25% DE DESCONTO</p>
+                <!-- <div class="login-container">
+                </div> -->
+                <div>
+                    <input class="form-group" type="text" id="username" placeholder="E-mail:" name="username" required>
+                </div>
+                <div>
+                    <input class="form-group" type="text" id="fone" placeholder="Telefone:" name="fone" required>
+                </div>
+                <button class="button" type="submit">CADASTRAR</button>
+                <h6 class="termo">*Ao cadastrar-se, você concorda com os termos de uso.</h6>
+            </div>
+        </div>
+
+        <script>
+            /* abrir o popup sem o button, e cotinuar fechando com o X */
+            abrirPopupComAtraso()
+
+
+            // Função para exibir o pop-up após um determinado tempo (em milissegundos)
+            function abrirPopupComAtraso() {
+                setTimeout(function () {
+                    // Aqui você coloca o código para exibir o pop-up
+                    abrirPopup()
+                }, 5000); // Tempo de atraso em milissegundos (5 segundos neste exemplo)
+            }
+
+
+
+
+            function abrirPopup() {
+                var popup = document.getElementById("popup");
+                popup.style.display = "block";
+            }
+
+
+
+
+            // Função para fechar o pop-up
+            function fecharPopup() {
+                var popup = document.getElementById("popup");
+                popup.style.display = "none";
+            }
+
+
+
+
+            window.addEventListener("scroll", function () {
+                ajustarPosicaoPopup();
+            }
+            );
+
+
+            function ajustarPosicaoPopup() {
+                var popup = document.getElementById("popup");
+                var alturaInicial = document.querySelector(".inicial").offsetHeight;
+
+
+                // Ajusta a posição da popup com base na rolagem da página
+                if (window.scrollY > alturaInicial) {
+                    popup.style.top = "0";
+                } else {
+                    popup.style.top = alturaInicial - window.scrollY + "px";
+                }
+            }
+
+
+
+
+            // Função para exibir o pop-up após um determinado tempo (em milissegundos)
+            function abrirPopupComAtraso() {
+                setTimeout(function () {
+                    // Aqui você coloca o código para exibir o pop-up
+                    abrirPopup();
+                }, 5000); // Tempo de atraso em milissegundos (5 segundos neste exemplo)
+            }
+
+
+
+
+        </script>
+
+        <footer class="rodape">
+            <img src="IMAGENS/html/LOGO CATALOGO 1.png" alt="logo">
+            <div class="social">
+                <img src="IMAGENS/html/Group 1000001749.png" alt="" class="fotos">
+                <img src="IMAGENS/html/Group 1000001750.png" alt="" class="fotos">
+                <img src="IMAGENS/html/Group 1000001751.png" alt="" class="fotos">
+            </div>
+            <p class="direitos">Copyright © 2023 LLS | All Rights Reserved </p>
+        </footer>
+    </div>
+</body>
+
+</html>

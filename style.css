@@ -1,0 +1,205 @@
+* {
+    margin: 0px;                 /*margem nos quatro lados do elemento*/
+    padding: 0px;               /*definir uma distância interna entre um elemento e sua borda*/
+    box-sizing: border-box;    /*tamanho até a borda */
+}
+
+ul {
+    display: flex;         /*organizar os elementos na página*/
+    list-style: none;     /*estilo a lista*/
+    gap: 40px;           /*define os espaços entre as linhas e colunas*/
+}
+
+.menu {
+    color: #fff;                                   /*cor da letra*/
+    font-family: 'Open Sans';                       /*fonte da letra*/
+    font-size: 16px;                               /*tamanho da fonte*/
+    font-weight: 800;                             /*intensidade da fonte*/
+    line-height: 50px;                           /*espaçamento entre as linhas*/
+    background: var(--principal-2, #593000);  /*definir os valores de fundo individuais*/
+    display: flex;                             /*organizar os elementos na página*/
+    padding: 24px;                            /*definir uma distância interna entre um elemento e sua borda*/
+    justify-content: space-between;          /*alinhar os elementos reto*/
+    align-items: center;                    /*alinhamento de todos os itens transversal*/
+}
+
+.logo {
+    width: 128px;        /*largura*/
+    height: 67px;       /*altura*/
+    flex-shrink: 0;    /*encolher*/
+}
+
+
+.rodape {
+    display: flex;                                  /*organizar os elementos na página*/
+    align-items: center;                           /*alinhamento de todos os itens transversal*/
+    background: var(--principal-2, #593000);    /*definir os valores de fundo individuais*/
+    width: 100%;                                 /*largura*/
+    padding: 8px;                               /*definir uma distância interna entre um elemento e sua borda*/
+    justify-content: space-between;            /*alinhar os elementos reto*/
+}
+
+
+.direitos {
+    color: var(--secundria-0, #FFF5D6);              /*cor da letra*/
+    text-align: right;                                /*defini o alinhamento horizontal do texto*/
+    font-feature-settings: 'clig' off, 'liga' off;   /*controle sobre tipografia avançada*/
+    font-family: Open Sans;                         /*fonte da letra*/
+    font-size: 16px;                               /*tamanho da fonte*/
+    font-style: normal;                           /*estilo da fonte*/
+    font-weight: 700;                            /*intensidade da fonte*/
+    line-height: 20px;                          /*espaçamento entre as linhas*/
+}
+
+.fotos {
+    width: 50px;       /*largura*/
+
+}
+
+section {
+    height: 100vh;    /*altura*/
+}
+
+.quem {
+    background-image: url("IMAGENS/quem-somos/capa.png");  /*definir uma imagem de fundo*/
+    background-size: cover;                               /*define o tamanho da imagem de fundo*/
+    background-repeat: no-repeat;                        /*como a imagem de fundo é posicionada*/
+    margin: 0;                                          /*margem nos quatro lados do elemento*/
+
+}
+
+header a {
+    text-decoration: none;   /*estilo das linhas*/
+    color: #fff;          /*cor da letra*/
+}
+
+nav a:hover {
+    color: #B26C1B;    /*cor da letra*/
+}
+
+
+.paragrafo1 {  
+    width: 864px;                /*largura*/
+    color: #593000;           /*cor da letra*/
+    font-family: Open Sans;    /*fonte da letra*/
+    font-size: 32px;          /*tamanho da fonte*/
+    font-style: normal;      /*estilo da fonte*/
+    font-weight: 600;       /*intensidade da fonte*/
+    line-height: normal;   /*espaçamento entre as linhas*/
+    padding: 16px;        /*definir uma distância interna entre um elemento e sua borda*/
+    margin: 16px;        /*margem nos quatro lados do elemento*/
+    ;
+}
+
+.titulo {
+    color: var(--principal-2, #593000);               /*cor da letra*/
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.40);    /*sombra no texto*/
+    font-family: Open Sans;                           /*fonte da letra*/
+    font-size: 110px;                                /*tamanho da fonte*/
+    font-style: normal;                             /*estilo da fonte*/
+    font-weight: 700;                              /*intensidade da fonte*/
+    line-height: 50px;                            /*espaçamento entre as linhas*/
+    text-align: center;                          /*defini o alinhamento horizontal do texto*/
+    padding: 40px;                              /*definir uma distância interna entre um elemento e sua borda*/   
+}
+
+.subtitulo {
+    color: var(--principal-2, #593000);             /*cor da letra*/
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);  /*sombra no texto*/
+    font-family: Open Sans;                         /*fonte da letra*/
+    font-size: 30px;                               /*tamanho da fonte*/
+    font-style: normal;                           /*estilo da fonte*/
+    font-weight: 700;                            /*intensidade da fonte*/
+    line-height: 50px;                          /*espaçamento entre as linhas*/
+    text-align: center;                        /*defini o alinhamento horizontal do texto*/
+}
+.popup-conteudo {
+    position: fixed;                    /*terá uma posição absoluta em relação ao seu ancestral mais próximo com uma posição definida.*/
+    top: 50%;                          /* colocam o elemento no meio da tela. */
+    left: 50%;                        /* colocam o elemento no meio da tela. */
+    transform: translate(-50%, -50%);/*metade de sua própria largura e metade de sua própria altura, efetivamente centralizando-o na tela*/
+    background-color:  rgba(77, 77, 76, 15);
+    padding: 30px;                                /* preenchimento de 20px ao redor do conteúdo */
+    border-radius: 12px;                         /* Arredonda as bordas do elemento */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  /* Adiciona uma sombra ao redor do elemento */
+    width: 500px;
+}
+.fechar {
+    position: fixed;      /*elemento terá uma posição absoluta*/
+    top: 10px;           /*Posiciona o elemento, 10 pixels de distância do topo*/
+    right: 10px;        /*Posiciona o elemento,10 pixels de distância da direita*/
+    font-size: 20px;   /*tamanho da fonte do texto*/
+    cursor: pointer;  /*cursor do mouse como um ponteiro ao passar sobre o elemento.*/
+}
+.form-group{
+    width: 80%;
+}
+.button{
+    margin: 24px;
+}
+.login-container {
+    padding: 30px;                                       /*definir uma distância interna entre um elemento e sua borda*/
+    border-radius: 8px;                                 /*definir bordas arredondadas*/
+    box-shadow: 0 4px 8px rgba(157, 143, 143, 0.1);  /*efeitos de sombra em volta de um elemento*/
+    max-width: 500px;                                 /*largura máxima de um elemento*/
+    width: 100%;                                     /*largura*/
+    text-align: center;                             /*defini o alinhamento horizontal do texto*/
+    display: flex;                                 /*organizar os elementos na página*/
+    justify-content: center;                      /*alinhar os elementos reto*/
+    align-items: center;                         /*alinhamento de todos os itens transversal*/
+    text-align: center;
+
+
+}
+.form-group {
+    margin-bottom: 10px;                      /*define a margem na parte inferior de um elemento.*/
+    text-align: left;                        /*defini o alinhamento horizontal do texto*/
+    width: 100%;                            /*largura*/
+    padding: 8px;                          /*definir uma distância interna entre um elemento e sua borda*/
+    border-radius: 30px 30px 30px 30px;   /*definir bordas arredondadas*/
+    background-color: #000000;         /*define a cor de fundo de um elemento.*/
+    border: none;                       /*adiciona um contorno em volta de um elemento*/
+    color: antiquewhite;             /*cor da letra*/
+}
+.button {
+    border: none;                    /*adiciona um contorno em volta de um elemento*/
+    padding: 10px 20px;             /*definir uma distância interna entre um elemento e sua borda*/
+    border-radius: 13.055px;       /*definir bordas arredondadas*/
+    font-size: 16px;              /*tamanho da fonte*/
+    background-color: #ffffff  /*define a cor de fundo de um elemento.*/
+}
+button:hover {
+    background-color: #CC893D;  /*define a cor de fundo de um elemento.*/
+}
+.cadastro {
+    color: var(--principal-02, #CC893D);  /*cor da letra*/
+    font-family: Open Sans;                /*fonte da letra*/
+    font-style: normal;                   /*estilo da fonte*/
+    font-weight: 600;                    /*intensidade da fonte*/
+    text-align: center;                 /*defini o alinhamento horizontal do texto*/
+    font-size: 70px;                   /*tamanho da fonte*/
+    margin-bottom: 40px;              /*define a margem na parte inferior de um elemento.*/
+    width: 100%;                     /*largura*/
+}
+.termo {
+    color: #FFF;             /*cor da letra*/
+    font-family: Open Sans;   /*fonte da letra*/
+    font-size: 15px;         /*tamanho da fonte*/
+    font-style: normal;     /*estilo da fonte*/
+    font-weight: 600;      /*intensidade da fonte*/
+    line-height: 50px;    /*espaçamento entre as linhas*/
+}
+.paragrafo {
+    color: #FFF;             /*cor da letra*/
+    font-family: Open Sans;   /*fonte da letra*/
+    font-size: 24px;         /*tamanho da fonte*/
+    font-style: normal;     /*estilo da fonte*/
+    font-weight: 800;      /*intensidade da fonte*/
+    line-height: 50px;    /*espaçamento entre as linhas*/
+}
+.cadastro{
+    font-size: 64px;
+}
+#popup{
+    display: none;
+}
